@@ -17,6 +17,24 @@
         }
     </style>
 </head>
+    <!-- Firebase SDK & Config -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyCurGa0VhCQIVQ1BY3De2GPq9i-T5dHZ1A",
+    authDomain: "pemilihan-ketos-7f6c6.firebaseapp.com",
+    databaseURL: "https://pemilihan-ketos-7f6c6-default-rtdb.firebaseio.com",
+    projectId: "pemilihan-ketos-7f6c6",
+    storageBucket: "pemilihan-ketos-7f6c6.appspot.com",
+    messagingSenderId: "1099136291745",
+    appId: "1:1099136291745:web:MTRjMTUxOTA"
+  };
+  
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+</script>
 <body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col justify-between">
 
     <!-- NAVIGATION BAR -->
